@@ -1,0 +1,25 @@
+[package]
+name = "x-cc"
+version = "1.0.0"
+edition = "2021"
+description = "CLI tool for Code Coverage Reporting for Xcode Project with excluded file path feature. 🕊️ 🦀"
+authors = ["alfin.syahruddin@icloud.com"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/alfinsyahruddin/x-cc"
+repository = "https://github.com/alfinsyahruddin/x-cc"
+keywords = ["cli", "x-cc", "code-coverage"]
+categories = ["command-line-utilities"]
+
+
+[dependencies]
+colorize = "0.1.0"
+regex = "1.11.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
